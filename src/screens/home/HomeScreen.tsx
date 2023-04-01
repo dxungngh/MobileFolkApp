@@ -1,7 +1,7 @@
 import React, { useMemo, useEffect } from "react";
-import { FlatList, View, ActivityIndicator } from "react-native";
+import { FlatList, View } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
-import { selectCats, setlectLoading } from "../../store/catsSlice/selectors";
+import { selectCats } from "../../store/catsSlice/selectors";
 import { loadCats } from "../../store/catsSlice";
 import { useTheme } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -28,7 +28,6 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
   };
 
   const cats = useSelector(selectCats);
-  const loading = useSelector(setlectLoading);
   console.log("size: " + cats.length);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -49,7 +48,7 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
           offset: 216 * index,
           index,
         })}
-        onEndReachedThreshold={0.001}
+        onEndReachedThreshold={0.01}
       />
     </View>
   );
@@ -76,7 +75,6 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      {loading && <ActivityIndicator />}
       <Welcome />
       <Content />
     </SafeAreaView>

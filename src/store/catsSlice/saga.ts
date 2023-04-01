@@ -1,4 +1,4 @@
-import { call, put, select, takeLatest } from "redux-saga/effects";
+import { call, put, select, takeEvery } from "redux-saga/effects";
 import { selectLimit, selectPage, setlectLoading } from "./selectors";
 import { loadCats, loadCatsSuccessfully, loadCatsError, setLoading } from ".";
 import { CatsErrorType } from "./types";
@@ -23,9 +23,10 @@ export function* getCats() {
     }
   } catch (err: any) {
     console.log("ErrorSaga: " + JSON.stringify(err));
+    yield put(loadCatsError(CatsErrorType.RESPONSE_ERROR));
   }
 }
 
 export function* catsSaga() {
-  yield takeLatest(loadCats.type, getCats);
+  yield takeEvery(loadCats.type, getCats);
 }
