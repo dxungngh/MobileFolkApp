@@ -11,7 +11,6 @@ export function* getCats() {
   const loading: boolean = yield select(setlectLoading);
 
   try {
-    console.log("getCats is Called: " + JSON.stringify(loading));
     if (!loading) {
       yield put(setLoading());
       const catList: ICatItem[] = yield call(loadCatsFromAPI, limit, page);
@@ -22,7 +21,6 @@ export function* getCats() {
       }
     }
   } catch (err: any) {
-    console.log("ErrorSaga: " + JSON.stringify(err));
     yield put(loadCatsError(CatsErrorType.RESPONSE_ERROR));
   }
 }

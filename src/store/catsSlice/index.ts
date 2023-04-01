@@ -15,22 +15,17 @@ export const catsSlice = createSlice({
   name: "cats",
   initialState,
   reducers: {
-    loadCats: (_state) => {
-      console.log("loadCats");
-    },
+    loadCats: (_state) => {},
     loadCatsSuccessfully: (state, action: PayloadAction<ICatItem[]>) => {
-      console.log("loadCatsSuccessfully");
       state.cats = state.cats.concat(action.payload);
       state.loading = false;
       state.page++;
     },
     loadCatsError: (state, action: PayloadAction<CatsErrorType>) => {
-      console.log("loadCatsError");
       state.error = action.payload;
       state.loading = false;
     },
     setLoading: (state) => {
-      console.log("setLoading");
       state.loading = true;
     },
   },

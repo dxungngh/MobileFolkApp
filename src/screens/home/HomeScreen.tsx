@@ -28,7 +28,6 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
   };
 
   const cats = useSelector(selectCats);
-  console.log("size: " + cats.length);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(loadCats());
