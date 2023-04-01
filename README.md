@@ -1,30 +1,11 @@
-<img alt="React Native Typescript Boilerplate" src="assets/logo.png" width="1050"/>
+# 🥳 Testing app of MobileFolk 😍
 
-[![A lot of fundamental features with Typescript support React Native Boilerplate](https://img.shields.io/badge/-A%20lot%20of%20fundamental%20features%20with%20Typescript%20support%20React%20Native%20Boilerplate-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-typescript-boilerplate)
-
-[![npm version](https://img.shields.io/npm/v/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
-[![npm](https://img.shields.io/npm/dt/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
-![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
-
-<p align="center">
-  <img alt="React Native Typescript Boilerplate"
-        src="assets/react-native-typescript-boilerplate.gif" height="650" width="325" />
-</p>
-
-# 🥳 Version 3.5 is here 😍
-
-We're proudly announce that `Version 3.5` is here!
-
-- Native Splash Screen
-- New React Native Architecture Ready **(RN 0.71+)** 🍻
-- Awesome Theme Support for both Light / Dark Mode 🌙
-- Latest `React` and `React Native` Dependencies 🌟
-- All Dependencies are Upgraded
-- New GIF with the Project Example for Theming
-- Much Better Documentation
-- Detailed Roadmap
+- Get list of images from this URL: https://api.thecatapi.com/v1/images/search?limit=20&api_key=bbfb5b50-ec47-4276-8f08-71e3614acfed
+- Display list of images and display in a list with ​one​ column.
+- When tapping on an item then the app open detail screen shows the corresponding image in full screen.
+- Image on the list should have rounded corner with radius 8dp, image height on the list should be 200dp
+- When user load to the end of the list, load more 20 items
+- Change logo of App by logo of MobileFolk
 
 # 🐶 What's Included?
 
@@ -73,16 +54,6 @@ We're proudly announce that `Version 3.5` is here!
 
 # 🚀 Getting Started
 
-## Quick Start
-
-To create a new project using the barebone boilerplate:
-
-```sh
-git clone https://github.com/WrathChaos/react-native-typescript-boilerplate.git my-app-name
-```
-
-# 🎯 Step By Step Guide
-
 ## Clean-Up & Simple Run
 
 Clean up the files from the example repository and do not forget to install the dependencies
@@ -102,28 +73,6 @@ There is a good example by default on `HomeScreen`. You can delete the all scree
 - `npm run husky:setup`
 - `npx pod-install` (iOS Only)
 - `react-native run-ios/android`
-
-## Husky Integration
-
-Before doing anything else, please simply run the command to initalize the husky. If you do not run clean-up part you should run the husky setup by yourself
-
-```jsx
-npm run husky:setup
-```
-
-`husky:setup` will handle the initialization, installation and ready to use `commitlint`, `prettier` and `eslint`.
-
-## Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
-
-```sh
-npx react-native-rename <your-project-name>
-```
-
-> With custom Bundle Identifier (Android only. For iOS, please use Xcode)
-
-```sj
-npx react-native-rename <your-project-name> -b <bundleIdentifier>
-```
 
 ### Install Pods (iOS Only)
 
@@ -166,38 +115,9 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [Event Emitter Usage](./docs/event-emitter.md)
 - [Project Structure](./docs/project-structure.md)
 
-# 🔮 Roadmap
-
-- [x] ~~LICENSE~~
-- [x] ~~Better Husky: Linter, Prettier and Commintlint~~
-- [x] ~~Removal of `react-native-animated-splash-screen`~~
-- [x] ~~New Theme Support with React Navigation~~
-- [x] ~~Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)~~
-- [x] ~~Better and separated documentation~~
-- [x] ~~Axios Hooks~~
-- [x] ~~React Native New Architecture~~
-- [ ] `Babel Plugin Module Resolver` Documentation with Example
-- [ ] `Navigation Service` Documentation with Example
-- [ ] `Localization` Documentation with Example
-- [ ] `Theme` Documentation with Example
-- [ ] `FAQ` Documentation
-- [ ] `Website` for the boilerplate
-- [ ] Splash Screen Documentation
-- [ ] `Detox E2E` Integration Fork Version
-- [ ] `Redux` Fork Version
-- [ ] `MobX State Tree` Fork Version
-- [ ] Write an article about the lib on `Medium`
-- [ ] Write an article about the lib on `DevTo`
-
-## Credits
-
-<span>Photo by <a href="https://unsplash.com/@sotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shifaaz shamoon</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
-
-<span>Photo by <a href="https://unsplash.com/@jamie452?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jamie Street</a> on <a href="https://unsplash.com/s/photos/profile-picture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
-
 ## Author
 
-FreakyCoder, kurayogun@gmail.com
+Daniel Nguyen, dxungngh@gmail.com
 
 ## License
 
