@@ -1,11 +1,10 @@
-# 🥳 Testing app of MobileFolk 😍
+# 🥳 Testing app 😍
 
 - Get list of images from this URL: https://api.thecatapi.com/v1/images/search?limit=20&api_key=bbfb5b50-ec47-4276-8f08-71e3614acfed
 - Display list of images and display in a list with ​one​ column.
 - When tapping on an item then the app open detail screen shows the corresponding image in full screen.
 - Image on the list should have rounded corner with radius 8dp, image height on the list should be 200dp
 - When user load to the end of the list, load more 20 items
-- Change logo of App by logo of MobileFolk
 
 # 🐶 What's Included?
 
